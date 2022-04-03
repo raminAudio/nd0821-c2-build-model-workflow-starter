@@ -53,42 +53,42 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input_artifact",
         type= str,## INSERT TYPE HERE: str, float or int,
-        help= "input artifact",## INSERT DESCRIPTION HERE,
+        help= "path to input artifact",## INSERT DESCRIPTION HERE,
         required=True
     )
 
     parser.add_argument(
         "--output_artifact",
         type= str,## INSERT TYPE HERE: str, float or int,
-        help= "output artifact",## INSERT DESCRIPTION HERE,
+        help= "path to output artifact",## INSERT DESCRIPTION HERE,
         required=True
     )
 
     parser.add_argument(
         "--output_type",
         type= str,## INSERT TYPE HERE: str, float or int,
-        help= 'output type',## INSERT DESCRIPTION HERE,
+        help= 'output is a csv file',## INSERT DESCRIPTION HERE,
         required=True
     )
 
     parser.add_argument(
         "--output_description",
         type= str,## INSERT TYPE HERE: str, float or int,
-        help= 'output',## INSERT DESCRIPTION HERE,
+        help= "a clean dataframe saved to drive using the provided name",
         required=True
     )
 
     parser.add_argument(
         "--min_price",
         type= float,## INSERT TYPE HERE: str, float or int,
-        help= 'min price',## INSERT DESCRIPTION HERE,
+        help= 'accepted min price',## INSERT DESCRIPTION HERE,
         required=True
     )
 
     parser.add_argument(
         "--max_price",
         type= float,## INSERT TYPE HERE: str, float or int,
-        help= 'max price',## INSERT DESCRIPTION HERE,
+        help= 'accepted max price',## INSERT DESCRIPTION HERE,
         required=True
     )
 

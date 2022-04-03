@@ -128,6 +128,8 @@ def go(args):
     # Now log the variable "mae" under the key "mae".
     # YOUR CODE HERE
     run.summary['mae'] = mae
+    logger.info(f"Score: {r_squared}")
+    logger.info(f"MAE: {mae}")
     ######################################
 
     # Upload to W&B the feture importance visualization
